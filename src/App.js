@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
+import KeyboardTester from './components/KeyboardTester';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Keyboard Tester</h1>
       </header>
+      <main>
+        <KeyboardTester />
+      </main>
+      <footer>
+        <p>Press any key to test it. The key will highlight when pressed.</p>
+      </footer>
     </div>
   );
 }
 
 export default App;
+
